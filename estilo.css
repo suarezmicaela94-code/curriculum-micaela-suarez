@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: montserratitalic;
-    src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf"); format("truetype")
+    src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf"); format:("truetype")
     font-weight: normal;
     font-style: italic;
 }
@@ -40,7 +40,7 @@ body {
 margin: 0;
 background-color: #d29bfd;
 font-family: roboto;
-color: #390050    
+color: #DABB9F   
 }
 
 h1 {
