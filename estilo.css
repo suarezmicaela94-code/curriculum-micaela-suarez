@@ -3,35 +3,35 @@
 
 @font-face{
     font-family: robotobold;
-    src: url("fonts/Roboto-Bold.ttf") format("truetype");
+    src: url("fonts/Roboto-Bold.ttf") format("truetype"); /*ojo porque esas comillas no son correctas y no te está tomando la fuente*/
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: montserratitalic;
-    src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf"); format:("truetype")
-    font-weight; normal:
+    src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf"); format:("truetype") /*esta línea está mal escrita, fijate arriba que está mejor*/
+    font-weight; normal: /*guarda que acá estás escribiendo al revés los : y ; */
     font-style; italic:
 }
 
 @font-face {
     font-family: montserrat-Variable;
-    src: url("fonts/Montserrat-VariableFont_wght.ttf"); format("truetype")
+    src: url("fonts/Montserrat-VariableFont_wght.ttf"); format("truetype") /*línea mal escrita*/
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: robotomedium;
-    src: url("fonts/Roboto-Medium.ttf"); format("truetype");
+    src: url("fonts/Roboto-Medium.ttf"); format("truetype"); /*línea mal escrita*/
     font-weight: normal;
-    font-style: medium;
+    font-style: medium; /*este no es un valor de font-style*/
 }
 
 @font-face {
     font-family: robotoregular;
-    src: url("fonts/Roboto-Regular.ttf"); format("truetype");
+    src: url("fonts/Roboto-Regular.ttf"); format("truetype"); /*línea mal escrita*/
     font-weight: normal;
     font-style: normal;
 }
@@ -39,12 +39,13 @@
 body {
 margin: 0;
 background-color: #dabb9f;
-font-family: roboto;
-color: #0f130c
+font-family: roboto; /*y esta fuente de donde salió? nunca la declaraste en las font-face*/
+font-size: 58px;
+color: #0f130c /*falta cerrar!*/
 }
 
 h1 {
-font-family: montserrat;
+font-family: montserrat; /*y esta fuente de donde salió? nunca la declaraste en las font-face*/
 font-size: 58px;
 text-transform: uppercase;
 }
