@@ -2,36 +2,36 @@
 @charset "utf-8";
 
 @font-face{
-    font-family: robotobold;
-    src: url("fonts/Roboto-Bold.ttf") format("truetype"); /*ojo porque esas comillas no son correctas y no te está tomando la fuente*/
+    font-family: Heading titulares;
+    src: url("fonts/Roboto-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: montserratitalic;
-    src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf"); format:("truetype") /*esta línea está mal escrita, fijate arriba que está mejor*/
-    font-weight; normal: /*guarda que acá estás escribiendo al revés los : y ; */
-    font-style; italic:
+    font-family: Heading secciones;
+    src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: montserrat-Variable;
-    src: url("fonts/Montserrat-VariableFont_wght.ttf"); format("truetype") /*línea mal escrita*/
+    font-family: Heading textos;
+    src: url("fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: robotomedium;
-    src: url("fonts/Roboto-Medium.ttf"); format("truetype"); /*línea mal escrita*/
+    font-family: Heading textos secundarios;
+    src: url("fonts/Roboto-Medium.ttf") format("truetype");
     font-weight: normal;
-    font-style: medium; /*este no es un valor de font-style*/
+    font-style: normal;
 }
 
 @font-face {
     font-family: robotoregular;
-    src: url("fonts/Roboto-Regular.ttf"); format("truetype"); /*línea mal escrita*/
+    src: url("fonts/Roboto-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -39,21 +39,24 @@
 body {
 margin: 0;
 background-color: #dabb9f;
-font-family: roboto; /*y esta fuente de donde salió? nunca la declaraste en las font-face*/
-font-size: 58px;
-color: #0f130c /*falta cerrar!*/
+font-family: roboto-Regular;
+color: #0f130c
 }
 
 h1 {
-font-family: montserrat; /*y esta fuente de donde salió? nunca la declaraste en las font-face*/
-font-size: 58px;
-text-transform: uppercase;
+font-family: "Heading titulares", sans-serif;
+font-size: 1.5rem;
+font-weight: bold;
 }
 
 h2 {
-font-family: montserrat;    
+font-family: "Heading textos", sans-serif;
+font-size: 1.25rem;
+font-weight: regular;    
 }
 
 h3 {
-font-family: robotomedium;    
+font-family: "Heading secciones", sans-serif;
+font-size: 0.8rem;
+font-weight: italic;
 }
