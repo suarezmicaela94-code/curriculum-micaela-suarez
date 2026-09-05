@@ -1,59 +1,485 @@
 /* documento CSS */
 @charset "utf-8";
 
-@font-face{
-    font-family: robotobold;
-    src: url("fonts/Roboto-Bold.ttf") format("truetype"); /*ojo porque esas comillas no son correctas y no te está tomando la fuente*/
+/* TIPOGRAFIAS */
+
+
+@font-face {
+
+    font-family: "Creamer";
+
+    src: url("fonts/Creamer.ttf") format("truetype");
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+
+@font-face {
+
+    font-family: "Roboto Regular";
+
+    src: url("fonts/Roboto-Regular.ttf") format("truetype");
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+
+@font-face {
+
+    font-family: "Roboto Bold";
+
+    src: url("fonts/Roboto-Bold.ttf") format("truetype");
+
     font-weight: bold;
+
     font-style: normal;
+
 }
 
-@font-face {
-    font-family: montserratitalic;
-    src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf"); format:("truetype") /*esta línea está mal escrita, fijate arriba que está mejor*/
-    font-weight; normal: /*guarda que acá estás escribiendo al revés los : y ; */
-    font-style; italic:
-}
 
-@font-face {
-    font-family: montserrat-Variable;
-    src: url("fonts/Montserrat-VariableFont_wght.ttf"); format("truetype") /*línea mal escrita*/
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: robotomedium;
-    src: url("fonts/Roboto-Medium.ttf"); format("truetype"); /*línea mal escrita*/
-    font-weight: normal;
-    font-style: medium; /*este no es un valor de font-style*/
-}
+/* GENERAL */
 
-@font-face {
-    font-family: robotoregular;
-    src: url("fonts/Roboto-Regular.ttf"); format("truetype"); /*línea mal escrita*/
-    font-weight: normal;
-    font-style: normal;
-}
 
 body {
-margin: 0;
-background-color: #dabb9f;
-font-family: roboto; /*y esta fuente de donde salió? nunca la declaraste en las font-face*/
-font-size: 58px;
-color: #0f130c /*falta cerrar!*/
+
+    margin: 0;
+
+    background-color: #efe4d6;
+
+    color: #29232c;
+
+    font-family: "Roboto Regular";
+
 }
+
+
+main {
+
+    display: block;
+
+}
+
+
+p {
+
+    font-family: "Roboto Regular";
+
+    font-size: 1rem;
+
+}
+
+
+
+/* TITULO PRINCIPAL */
+
 
 h1 {
-font-family: montserrat; /*y esta fuente de donde salió? nunca la declaraste en las font-face*/
-font-size: 58px;
-text-transform: uppercase;
+
+    font-family: "Creamer";
+
+    font-size: 6rem;
+
+    font-weight: normal;
+
+    color: #6d347d;
+
+    margin: 0;
+
 }
+
+
+
+/* BAJADA PRINCIPAL */
+
 
 h2 {
-font-family: montserrat;    
+
+    font-family: "Roboto Bold";
+
+    font-size: 1.5rem;
+
+    font-weight: bold;
+
+    color: #3f2949;
+
+    text-transform: uppercase;
+
 }
 
+
+
+/* TITULARES */
+
+
 h3 {
-font-family: robotomedium;    
+
+    font-family: "Roboto Bold";
+
+    font-size: 2rem;
+
+    font-weight: bold;
+
+    color: #54275f;
+
+    margin: 0;
+
+}
+
+
+
+/* SUBTITULOS */
+
+
+h4 {
+
+    font-family: "Roboto Bold";
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    color: #3f2949;
+
+}
+
+
+
+/* TITULO DE REDES */
+
+
+h5 {
+
+    font-family: "Creamer";
+
+    font-size: 3.5rem;
+
+    font-weight: normal;
+
+    color: #6d347d;
+
+    margin: 20px;
+
+}
+
+
+
+/* NAVEGACION */
+
+
+header {
+
+    background-color: #3f2949;
+
+}
+
+
+nav {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+nav a {
+
+    margin: 20px;
+
+    color: #efe4d6;
+
+    font-family: "Roboto Regular";
+
+}
+
+
+
+/* PRESENTACION */
+
+
+.presentacion {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 60px;
+
+}
+
+
+.presentacion-texto {
+
+    margin: 20px;
+
+}
+
+
+.presentacion-texto p {
+
+    font-size: 1.1rem;
+
+}
+
+
+.presentacion img {
+
+    margin: 20px;
+
+}
+
+
+
+/* SOBRE MI */
+
+
+.sobre-mi {
+
+    background-color: #dbc6e5;
+
+    margin: 35px;
+
+    padding: 35px;
+
+}
+
+
+.sobre-mi p {
+
+    margin: 15px 0;
+
+}
+
+
+
+/* EXPERIENCIA */
+
+
+.experiencia {
+
+    background-color: #dfccb7;
+
+    margin: 35px;
+
+    padding: 35px;
+
+}
+
+
+.experiencia-contenido {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.experiencia-titulos {
+
+    margin: 10px 40px 10px 0;
+
+}
+
+
+.experiencia-textos {
+
+    margin: 10px 0 10px 40px;
+
+}
+
+
+
+/* FORMACION */
+
+
+.formacion {
+
+    background-color: #dbc6e5;
+
+    margin: 35px;
+
+    padding: 35px;
+
+}
+
+
+.formacion-contenido {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.formacion-titulos {
+
+    margin: 10px 40px 10px 0;
+
+}
+
+
+.formacion-textos {
+
+    margin: 10px 0 10px 40px;
+
+}
+
+
+
+/* UN POCO MAS SOBRE MI */
+
+
+.personal {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: #dfccb7;
+
+    margin: 35px;
+
+    padding: 35px;
+
+}
+
+
+.personal-texto {
+
+    margin: 20px;
+
+}
+
+
+.personal img {
+
+    margin: 20px;
+
+}
+
+
+
+/* EMPRENDIMIENTO */
+
+
+.emprendimiento {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: #dbc6e5;
+
+    margin: 35px;
+
+    padding: 35px;
+
+}
+
+
+.emprendimiento-texto {
+
+    margin: 20px;
+
+}
+
+
+.emprendimiento-imagenes {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.emprendimiento-imagenes img {
+
+    margin: 20px;
+
+}
+
+
+
+/* REDES */
+
+
+.perfiles {
+
+    background-color: #dfccb7;
+
+    margin: 35px;
+
+    padding: 30px;
+
+    text-align: center;
+
+}
+
+
+.redes {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.redes a {
+
+    margin: 20px 40px;
+
+    color: #3f2949;
+
+}
+
+
+.redes p {
+
+    font-family: "Roboto Bold";
+
+}
+
+
+
+/* FOOTER */
+
+
+footer {
+
+    background-color: #3f2949;
+
+    color: #efe4d6;
+
+    text-align: center;
+
+    padding: 15px;
+
+}
+
+
+footer p {
+
+    margin: 0;
+
 }
