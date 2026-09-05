@@ -19,7 +19,7 @@
 
 @font-face {
 
-    font-family: "Roboto Regular";
+    font-family: "Roboto Regular"; /*las tipografías que vienen de google fonts es mejor linkearlas desde esa página así tu archivo tiene menos peso y el css es más corto, además estás atajada de errores*/
 
     src: url("fonts/Roboto-Regular.ttf") format("truetype");
 
