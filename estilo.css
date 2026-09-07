@@ -1,485 +1,257 @@
 /* documento CSS */
 @charset "utf-8";
+/* GOOGLE FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 /* TIPOGRAFIAS */
 
-
 @font-face {
-
-    font-family: "Creamer";
-
-    src: url("fonts/Creamer.ttf") format("truetype");
-
-    font-weight: normal;
-
-    font-style: normal;
-
-}
-
-
-@font-face {
-
     font-family: "Roboto Regular";
-
     src: url("fonts/Roboto-Regular.ttf") format("truetype");
-
     font-weight: normal;
-
     font-style: normal;
-
 }
-
 
 @font-face {
-
     font-family: "Roboto Bold";
-
     src: url("fonts/Roboto-Bold.ttf") format("truetype");
-
     font-weight: bold;
-
     font-style: normal;
-
 }
-
-
 
 /* GENERAL */
 
-
 body {
-
     margin: 0;
-
     background-color: #efe4d6;
-
     color: #29232c;
-
     font-family: "Roboto Regular";
-
 }
-
 
 main {
-
     display: block;
-
 }
-
 
 p {
-
     font-family: "Roboto Regular";
-
-    font-size: 1rem;
-
+    font-size: 1.2rem;
 }
-
-
 
 /* TITULO PRINCIPAL */
 
-
 h1 {
-
-    font-family: "Creamer";
-
-    font-size: 6rem;
-
+    font-family: "Lobster";
+    font-size: 6.5rem;
     font-weight: normal;
-
     color: #6d347d;
-
     margin: 0;
-
 }
-
-
 
 /* BAJADA PRINCIPAL */
 
-
 h2 {
-
     font-family: "Roboto Bold";
-
-    font-size: 1.5rem;
-
+    font-size: 1.8rem;
     font-weight: bold;
-
     color: #3f2949;
-
     text-transform: uppercase;
-
 }
-
-
 
 /* TITULARES */
 
-
 h3 {
-
     font-family: "Roboto Bold";
-
-    font-size: 2rem;
-
+    font-size: 2.5rem;
     font-weight: bold;
-
     color: #54275f;
-
     margin: 0;
-
 }
-
-
 
 /* SUBTITULOS */
 
-
 h4 {
-
     font-family: "Roboto Bold";
-
-    font-size: 1rem;
-
+    font-size: 1.3rem;
     font-weight: bold;
-
     color: #3f2949;
-
 }
-
-
-
-/* TITULO DE REDES */
-
-
-h5 {
-
-    font-family: "Creamer";
-
-    font-size: 3.5rem;
-
-    font-weight: normal;
-
-    color: #6d347d;
-
-    margin: 20px;
-
-}
-
-
 
 /* NAVEGACION */
 
-
 header {
-
     background-color: #3f2949;
-
 }
 
-
 nav {
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
+    gap: 35px;
 }
 
 
 nav a {
-
-    margin: 20px;
-
+    margin: 20px 0;
     color: #efe4d6;
-
     font-family: "Roboto Regular";
-
+    font-size: 1.1rem;
 }
-
-
 
 /* PRESENTACION */
 
+#inicio {
+    margin: 50px;
+}
 
 .presentacion {
-
     display: flex;
-
-    justify-content: space-between;
-
     align-items: center;
-
-    margin: 60px;
-
+    gap: 60px;
 }
 
 
-.presentacion-texto {
-
+.texto-presentacion {
     margin: 20px;
-
 }
 
-
-.presentacion-texto p {
-
-    font-size: 1.1rem;
-
+.texto-presentacion p {
+    font-size: 1.3rem;
 }
-
 
 .presentacion img {
-
     margin: 20px;
-
 }
 
+/* TARJETAS */
 
+.tarjeta {
+    margin: 25px 35px;
+    padding: 30px;
+}
 
-/* SOBRE MI */
-
-
-.sobre-mi {
-
+.violeta {
     background-color: #dbc6e5;
-
-    margin: 35px;
-
-    padding: 35px;
-
 }
 
-
-.sobre-mi p {
-
-    margin: 15px 0;
-
-}
-
-
-
-/* EXPERIENCIA */
-
-
-.experiencia {
-
+.beige {
     background-color: #dfccb7;
-
-    margin: 35px;
-
-    padding: 35px;
-
 }
 
+/* EXPERIENCIA Y FORMACION */
 
-.experiencia-contenido {
-
+.datos {
     display: flex;
-
-    align-items: center;
-
+    align-items: flex-start;
+    gap: 35px;
 }
 
 
-.experiencia-titulos {
-
-    margin: 10px 40px 10px 0;
-
+.datos article {
+    margin-top: 15px;
 }
 
+/* TRABAJOS REALIZADOS */
 
-.experiencia-textos {
-
-    margin: 10px 0 10px 40px;
-
-}
-
-
-
-/* FORMACION */
-
-
-.formacion {
-
-    background-color: #dbc6e5;
-
-    margin: 35px;
-
-    padding: 35px;
-
-}
-
-
-.formacion-contenido {
-
+.trabajos {
     display: flex;
-
-    align-items: center;
-
+    align-items: flex-start;
+    gap: 30px;
 }
 
 
-.formacion-titulos {
+.trabajo {
+    margin-top: 20px;
+}
 
-    margin: 10px 40px 10px 0;
-
+.trabajo img {
+    margin-bottom: 10px;
 }
 
 
-.formacion-textos {
+.trabajo h4 {
+    margin-bottom: 5px;
+}
 
-    margin: 10px 0 10px 40px;
 
+.trabajo p {
+    margin-top: 5px;
 }
 
 
 
 /* UN POCO MAS SOBRE MI */
 
-
-.personal {
-
+.fila {
     display: flex;
-
-    justify-content: space-between;
-
     align-items: center;
-
-    background-color: #dfccb7;
-
-    margin: 35px;
-
-    padding: 35px;
-
+    gap: 40px;
 }
 
 
-.personal-texto {
-
-    margin: 20px;
-
+.fila article {
+    margin: 10px;
 }
 
 
-.personal img {
-
-    margin: 20px;
-
+.fila img {
+    margin: 10px;
 }
-
-
-
-/* EMPRENDIMIENTO */
-
-
-.emprendimiento {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    background-color: #dbc6e5;
-
-    margin: 35px;
-
-    padding: 35px;
-
-}
-
-
-.emprendimiento-texto {
-
-    margin: 20px;
-
-}
-
-
-.emprendimiento-imagenes {
-
-    display: flex;
-
-    align-items: center;
-
-}
-
-
-.emprendimiento-imagenes img {
-
-    margin: 20px;
-
-}
-
-
 
 /* REDES */
 
-
-.perfiles {
-
-    background-color: #dfccb7;
-
-    margin: 35px;
-
-    padding: 30px;
-
+.redes-contenedor {
     text-align: center;
-
 }
 
+.titulo-redes {
+    font-family: "Lobster";
+    font-size: 3.8rem;
+    font-weight: normal;
+    color: #6d347d;
+    margin: 20px;
+}
 
 .redes {
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
+    gap: 40px;
 }
 
 
 .redes a {
-
-    margin: 20px 40px;
-
     color: #3f2949;
-
 }
 
 
 .redes p {
-
     font-family: "Roboto Bold";
-
+    font-size: 1.1rem;
 }
-
-
 
 /* FOOTER */
 
-
 footer {
-
     background-color: #3f2949;
-
     color: #efe4d6;
-
-    text-align: center;
-
     padding: 15px;
-
 }
 
 
-footer p {
+.catedra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
 
+.catedra p {
+    font-family: "Roboto Regular";
+    font-size: 0.9rem;
     margin: 0;
+}
 
+.catedra img {
+    margin: 5px;
 }
